@@ -2,11 +2,22 @@
   "name": "Image Hash Generator",
   "short_name": "ImageHash",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#0f172a",
   "orientation": "portrait",
   "icons": [
+    {
+      "src": "assets/ImageHashGenerator-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/ImageHashGenerator-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
     {
       "src": "ImageHashGenerator.ico",
       "sizes": "64x64 128x128 256x256",
