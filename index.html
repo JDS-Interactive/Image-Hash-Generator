@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hash Generator</title>
+    <link rel="icon" href="ImageHashGenerator.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="hero-card">
+            <div class="hero-copy">
+                <p class="eyebrow">Limitless Mobile Applications</p>
+                <h1>Image Hash Generator</h1>
+                <p class="hero-text">
+                    Generate a SHA-256 fingerprint for any image directly in your browser.
+                    Verify files, compare outputs, and copy the resulting hash instantly.
+                </p>
+            </div>
+            <div class="hero-art-wrap">
+                <img
+                    src="assets/image-hash-hero.png"
+                    alt="Illustration of an image with a hash symbol representing image hashing"
+                    class="hero-art"
+                >
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-header">
+                <h2>Generate Hash</h2>
+                <p>Drag in an image or browse from your device.</p>
+            </div>
+
+            <label for="file-input" id="drop-zone" class="drop-zone">
+                <input type="file" id="file-input" accept="image/*">
+                <div class="drop-zone-content">
+                    <div class="drop-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 16V4"></path>
+                            <path d="m7 9 5-5 5 5"></path>
+                            <path d="M5 20h14"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <strong>Drag and drop an image</strong>
+                        <span>or click here to browse</span>
+                    </div>
+                </div>
+            </label>
+
+            <div class="controls-grid">
+                <div class="field-block">
+                    <label for="char-limit">Visible hash length</label>
+                    <input type="number" id="char-limit" min="1" max="64" value="64">
+                </div>
+
+                <div class="field-block field-block-wide">
+                    <label for="hash-output">Generated hash</label>
+                    <div class="hash-output-wrap">
+                        <input type="text" id="hash-output" placeholder="Hash value will appear here..." readonly>
+                        <button type="button" id="copy-btn" class="icon-btn" aria-label="Copy generated hash" title="Copy hash">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+                                <path d="M5 15V6a2 2 0 0 1 2-2h9"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="status-message" class="status-message" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
