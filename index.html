@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Hash Generator</title>
-    <link rel="icon" href="ImageHashGenerator.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="icon" href="ImageHashGenerator.ico" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -75,5 +77,14 @@
     </main>
 
     <script src="script.js"></script>
+    <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./serviceworker.js")
+          .then(() => console.log("✅ Service Worker Registered"))
+          .catch(err => console.error("SW Error:", err));
+      });
+    }
+    </script>
 </body>
 </html>
