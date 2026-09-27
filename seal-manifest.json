@@ -1,0 +1,22 @@
+{
+  "manifest": {
+    "format": "CodeSeal43",
+    "version": "1.0.0",
+    "buildId": "1184012a-0cc9-4ddc-bf31-66064c66a81c",
+    "appId": "com.ImageHashGenerator.lma-app",
+    "mode": "standalone",
+    "files": {
+      "app.csl": "2a9718c435793bff68ccd2ff3804b5b85dd6de68617334b38cc3b916297c47e3",
+      "app-runtime.wasm": "403a301468ff0bf76b692859051005d215ca2664590a96de685fff54e8d05b5b",
+      "seal-bridge.js": "282da3650853855795cb0f0dc532811f2af620d6f1c027509909985b11ed2c20",
+      "assets/image-hash-hero.png": "92c4971efe3590375c3c769dc24529e68d365f2fa066f4c6b6ddfcfe159c527a",
+      "assets/ImageHashGenerator.png": "e38a90d82fced4294f5a305d3e56b07ebd7f01a1988f9d63f28ff2f296936041",
+      "assets/ImageHashGenerator.ico": "048221fe100e4c576391ac2218b7124c54f1a20ed68b20aabcf2edbc85f4eddc",
+      "assets/ImageHashGenerator-512.png": "db8db16bdfe210f430733a5e4f95ebf54111c04116f5f1a617432b7b6181b5c4",
+      "assets/ImageHashGenerator-192.png": "75e12b139a5459ba88ae9ebd980e9d6aae0ec67cf3e460ab0fbdadf44946c043",
+      "ImageHashGenerator.ico": "048221fe100e4c576391ac2218b7124c54f1a20ed68b20aabcf2edbc85f4eddc",
+      "manifest.json": "bc2c2426c3216af666ff33f2f6ee7c23817d3433d510ff41424bdb07d35ec612"
+    }
+  },
+  "signature": "BAkCEI1uREKLe+pOS1I40IEqpulsUhgrk4QKQt86q7w8gPS4VWCBhA9aG+F4x2PVZPMmKcmpNlpW7Pd1eHodEw=="
+}
